@@ -1,6 +1,6 @@
 import pymongo
 
-database = pymongo.MongoClient("mongodb+srv://zeus:getkicks@cluster0.bdwamso.mongodb.net/")
+database = pymongo.MongoClient("MONGO URI")
 db = database["Entity"]
 col = db["lb"]
 
@@ -37,5 +37,6 @@ def lb(rank):
         export_data['user_count'] = total_data
         export_data['user_data'] = []
         return export_data
+
 
 print(get_user(38544609826701312))
