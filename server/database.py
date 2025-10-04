@@ -39,4 +39,3 @@ def lb(rank):
         return export_data
 
 
-print(get_user(38544609826701312))
